@@ -6,9 +6,40 @@
 </description>
     <link>https://aladac.github.io/</link>
     <atom:link href="https://aladac.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 10:16:48 +0200</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 10:16:48 +0200</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 23:45:18 +0200</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 23:45:18 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Back to school: codecademy.com</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/7OGyCaq.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I honestly do not remember how I stumbled upon this site.
+Probably found it on either &lt;a href=&quot;https://www.reddit.com/r/programming&quot;&gt;r/programming&lt;/a&gt;
+or on &lt;a href=&quot;http://news.ycombinator.com&quot;&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I really like &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Codecademy&lt;/a&gt;. I started poking around
+it some time ago, focusing mainly on the Python entry course.&lt;/p&gt;
+
+&lt;p&gt;Recently I returned to the site and done some &lt;a href=&quot;https://www.codecademy.com/en/tracks/javascript&quot;&gt;JavaScript&lt;/a&gt;
+and &lt;a href=&quot;https://www.codecademy.com/en/tracks/ruby&quot;&gt;Ruby&lt;/a&gt; examples.&lt;/p&gt;
+
+&lt;p&gt;Even though these were very basic lessons it was still very fun
+and satisfying to complete them.&lt;/p&gt;
+
+&lt;p&gt;I intend on coming back to &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Codecademy&lt;/a&gt; to complete
+more courses in the near future.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Sep 2015 00:00:00 +0200</pubDate>
+        <link>https://aladac.github.io/dev/education/2015/09/17/back_to_school.html</link>
+        <guid isPermaLink="true">https://aladac.github.io/dev/education/2015/09/17/back_to_school.html</guid>
+        
+        
+        <category>dev</category>
+        
+        <category>education</category>
+        
+      </item>
     
       <item>
         <title>I can relate</title>
@@ -411,27 +442,6 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <category>games</category>
         
         <category>emulation</category>
-        
-      </item>
-    
-      <item>
-        <title>Add subtitles to your iTunes videos</title>
-        <description>&lt;p&gt;There is a nice and clean way to embed subtitles to your iTunes videos without the need of transcoding the video. The program is called &lt;a href=&quot;https://bitbucket.org/galad87/subler/wiki/Home&quot;&gt;subler&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Of course there are numerous ways you can play video with subtitles on a Mac with much less hassle, but if you for some reason want to use iTunes to play or share videos on your home network this a neat and fast way to add subtitles to your videos.&lt;/p&gt;
-
-&lt;p&gt;Besides being able to convert SRT subtitles to the 3GPP format, the software can also transcode audio (using &lt;a href=&quot;http://www.perian.org&quot;&gt;Perian&lt;/a&gt;) from formats that are unwelcome inside a MP4 container (fe. AC3). Another nice addition is the possibility to add and or modify meta data inside the file (including the cover image).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://33.media.tumblr.com/tumblr_m5hvpqjIfe1r9e7vc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 12 Apr 2012 00:00:00 +0200</pubDate>
-        <link>https://aladac.github.io/video/osx/2012/04/12/add_subs_to_your_itunes_video.html</link>
-        <guid isPermaLink="true">https://aladac.github.io/video/osx/2012/04/12/add_subs_to_your_itunes_video.html</guid>
-        
-        
-        <category>video</category>
-        
-        <category>osx</category>
         
       </item>
     

@@ -6,9 +6,44 @@
 </description>
     <link>https://aladac.github.io/</link>
     <atom:link href="https://aladac.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 23:45:18 +0200</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 23:45:18 +0200</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Mon, 04 Apr 2016 01:50:32 +0200</pubDate>
+    <lastBuildDate>Mon, 04 Apr 2016 01:50:32 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Trying out true freelance</title>
+        <description>&lt;pre&gt;
+#!/usr/bin/env ruby
+require &#39;freelance&#39;
+endeavour = Endeavour.new
+begin
+  endeavour.begin
+rescue Endeavour::CommitmentError, Endeavour::SccuessError
+  endevor.effort += 10
+  retry
+end
+&lt;/pre&gt;
+
+&lt;p&gt;During the last couple of months I was contacted twice by representatives of &lt;strong&gt;Toptal&lt;/strong&gt;. Because I was swarmed at my current job I could not properly followup.&lt;/p&gt;
+
+&lt;p&gt;I decided to do some research about &lt;strong&gt;Toptal&lt;/strong&gt; and after liking what I found out I decided to register.&lt;/p&gt;
+
+&lt;p&gt;I tend to experiment a lot in my free time. Sometimes these experiments yield results in form of hobby projects released on github. If I can find the time to do something that is completely pro-bono, why not monetize that time by doing some actual freelance work?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Toptal&lt;/strong&gt; seems like a nice alternative to sites like &lt;code class=&quot;highlighter-rouge&quot;&gt;upwork.com&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;freelancer.com.&lt;/code&gt; I really like how the screening process was put together and can only hope I will successfully pass it.&lt;/p&gt;
+
+&lt;p&gt;I want to give something new a shot. I would really like to succeed in this endeavour a change in perspective is needed every now and then.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Apr 2016 00:00:00 +0200</pubDate>
+        <link>https://aladac.github.io/work/freelance/2016/04/04/trying_out_true_freelance.html</link>
+        <guid isPermaLink="true">https://aladac.github.io/work/freelance/2016/04/04/trying_out_true_freelance.html</guid>
+        
+        
+        <category>work</category>
+        
+        <category>freelance</category>
+        
+      </item>
     
       <item>
         <title>Back to school: codecademy.com</title>
@@ -35,9 +70,9 @@ more courses in the near future.&lt;/p&gt;
         <guid isPermaLink="true">https://aladac.github.io/dev/education/2015/09/17/back_to_school.html</guid>
         
         
-        <category>dev</category>
+        <category>Dev</category>
         
-        <category>education</category>
+        <category>Education</category>
         
       </item>
     
@@ -46,7 +81,7 @@ more courses in the near future.&lt;/p&gt;
         <description>&lt;p&gt;Sometimes it is easier to analyze your data models when they are visualized. Whether you analyze your models, collaborate with someone or just plainly need to explain to the customer
 how you understood the business concept - diagrams help a lot.&lt;/p&gt;
 
-&lt;p&gt;When things like &lt;code&gt;rdoc&lt;/code&gt;, &lt;code&gt;sdoc&lt;/code&gt; or &lt;code&gt;yard&lt;/code&gt; encourage and make documenting your work easier I was wondering if there is a tools that deals with ERM in a similar fashion.&lt;/p&gt;
+&lt;p&gt;When things like &lt;code class=&quot;highlighter-rouge&quot;&gt;rdoc&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sdoc&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;yard&lt;/code&gt; encourage and make documenting your work easier I was wondering if there is a tools that deals with ERM in a similar fashion.&lt;/p&gt;
 
 &lt;p&gt;Well, as I have found out on numerous occasions when dealing with Ruby related issues the answer to most &lt;em&gt;“Wonder if there is a … ?”&lt;/em&gt; questions is &lt;em&gt;“Yup!”&lt;/em&gt;.&lt;/p&gt;
 
@@ -56,24 +91,24 @@ how you understood the business concept - diagrams help a lot.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://rails-erd.rubyforge.org/&quot;&gt;Rails ERD&lt;/a&gt; allows you to generate ERD’s from your existing Models.&lt;/p&gt;
 
-&lt;p&gt;The tool uses &lt;code&gt;graphviz&lt;/code&gt; and is really straighforward to setup.&lt;/p&gt;
+&lt;p&gt;The tool uses &lt;code class=&quot;highlighter-rouge&quot;&gt;graphviz&lt;/code&gt; and is really straighforward to setup.&lt;/p&gt;
 
-&lt;p&gt;After making sure you have &lt;code&gt;graphviz&lt;/code&gt; installed you just modify your projects &lt;code&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After making sure you have &lt;code class=&quot;highlighter-rouge&quot;&gt;graphviz&lt;/code&gt; installed you just modify your projects &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:development&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;rails-erd&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:development&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;rails-erd&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Bundle:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;… and if you already have Models you are set to go.
 After issuing:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rake erd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;rake erd&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;… and your first &lt;code&gt;erd.pdf&lt;/code&gt; should be generated in your projects root directory.&lt;/p&gt;
+&lt;p&gt;… and your first &lt;code class=&quot;highlighter-rouge&quot;&gt;erd.pdf&lt;/code&gt; should be generated in your projects root directory.&lt;/p&gt;
 
 &lt;p&gt;There are several options to choose from. The gem is well documented both &lt;a href=&quot;http://rails-erd.rubyforge.org/customise.html&quot;&gt;command line options wise&lt;/a&gt; and &lt;a href=&quot;http://rails-erd.rubyforge.org/doc/&quot;&gt;API wise&lt;/a&gt;.&lt;/p&gt;
 
@@ -86,28 +121,28 @@ After issuing:&lt;/p&gt;
         <guid isPermaLink="true">https://aladac.github.io/ruby/ruby%20on%20rails/development/erm/erd/2014/04/10/i-can-relate.html</guid>
         
         
-        <category>ruby</category>
+        <category>Ruby</category>
         
-        <category>ruby on rails</category>
+        <category>Ruby on Rails</category>
         
-        <category>development</category>
+        <category>Development</category>
         
-        <category>erm</category>
+        <category>ERM</category>
         
-        <category>erd</category>
+        <category>ERD</category>
         
       </item>
     
       <item>
         <title>Everybody shout &quot;Spotify&quot;!</title>
         <description>&lt;p&gt;Okay, so you’ve got your &lt;a href=&quot;https://www.spotify.com&quot;&gt;Spotify&lt;/a&gt; premium account and are in a situation where a device able to play music better than your mobile, tablet or laptop is present.
-Sadly, the device neither has a Spotify client, nor uPnP media player or AirPlay capabilities… &lt;/p&gt;
+Sadly, the device neither has a Spotify client, nor uPnP media player or AirPlay capabilities…&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;p&gt;While wondering how to play music from my laptop on a &lt;strong&gt;Linux MPD server&lt;/strong&gt; that serves as a jukebox I came to one simple conclusion. Stream the music.&lt;/p&gt;
 
-&lt;p&gt;I started a NetRadio and broadcasted the &lt;code&gt;Stereo Mix&lt;/code&gt; from my laptop to the MPD. Voila.&lt;/p&gt;
+&lt;p&gt;I started a NetRadio and broadcasted the &lt;code class=&quot;highlighter-rouge&quot;&gt;Stereo Mix&lt;/code&gt; from my laptop to the MPD. Voila.&lt;/p&gt;
 
 &lt;p&gt;This way you can play Spotify on a device that lacks native Spotify support, but can play Internet Radio.&lt;/p&gt;
 </description>
@@ -116,19 +151,19 @@ Sadly, the device neither has a Spotify client, nor uPnP media player or AirPlay
         <guid isPermaLink="true">https://aladac.github.io/linux/mac%20os%20x/spotify/mpd/streaming/entertainment/multimedia/2013/03/19/everybody-shout-spotify.html</guid>
         
         
-        <category>linux</category>
+        <category>Linux</category>
         
-        <category>mac os x</category>
+        <category>Mac OS X</category>
         
-        <category>spotify</category>
+        <category>Spotify</category>
         
-        <category>mpd</category>
+        <category>MPD</category>
         
-        <category>streaming</category>
+        <category>Streaming</category>
         
-        <category>entertainment</category>
+        <category>Entertainment</category>
         
-        <category>multimedia</category>
+        <category>Multimedia</category>
         
       </item>
     
@@ -147,18 +182,18 @@ Sounds complicated? Well it’s really not.&lt;/p&gt;
 &lt;h3 id=&quot;textmate-snippet-video-example&quot;&gt;TextMate Snippet video example&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/o2iZ6tV.gif&quot; alt=&quot;Textmate Snippet&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The second Snippet used here, namely the &lt;code&gt;opt⇥&lt;/code&gt; looks like this inside:&lt;/p&gt;
+&lt;p&gt;The second Snippet used here, namely the &lt;code class=&quot;highlighter-rouge&quot;&gt;opt⇥&lt;/code&gt; looks like this inside:&lt;/p&gt;
 
 &lt;h3 id=&quot;snippet-code-example&quot;&gt;Snippet code example&lt;/h3&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-${1:o}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;--${2:long-option-name}${6: }&amp;quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;?1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-         &lt;span class=&quot;s2&quot;&gt;&amp;quot;${4:Option description.}&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;-${1:o}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--${2:long-option-name}${6: }&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;?1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+         &lt;span class=&quot;s2&quot;&gt;&quot;${4:Option description.}&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;vg&quot;&gt;$5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;vg&quot;&gt;$5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This basically defines what to initialy put when
-&lt;code&gt;opt⇥&lt;/code&gt;  is entered, and were are the cursor jump points after
+&lt;code class=&quot;highlighter-rouge&quot;&gt;opt⇥&lt;/code&gt;  is entered, and were are the cursor jump points after
 the initial template is inserted.&lt;/p&gt;
 
 &lt;p&gt;TextMate is a really cool tool - but it is a commercial tool. One of it’s major competitors &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt; is also commercial.
@@ -180,15 +215,15 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
 
 &lt;h3 id=&quot;making-it-work&quot;&gt;Making it work&lt;/h3&gt;
 
-&lt;p&gt;After installing pathogen, you should have you &lt;code&gt;~/.vim/bundle&lt;/code&gt; directory. All you need to do now in your terminal is:&lt;/p&gt;
+&lt;p&gt;After installing pathogen, you should have you &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vim/bundle&lt;/code&gt; directory. All you need to do now in your terminal is:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/.vim/bundle
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/garbas/vim-snipmate
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/vim-scripts/tlib.git
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/vim-scripts/vim-addon-mw-utils.git
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/honza/snipmate-snippets.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/.vim/bundle
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/garbas/vim-snipmate
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/vim-scripts/tlib.git
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/vim-scripts/vim-addon-mw-utils.git
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/honza/snipmate-snippets.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;This will download Snipmate and and its dependencies straight into your &lt;code&gt;~/.vim/bundle&lt;/code&gt; directory, from which pathogen will auto-load them once you start Vim.&lt;/p&gt;
+&lt;p&gt;This will download Snipmate and and its dependencies straight into your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vim/bundle&lt;/code&gt; directory, from which pathogen will auto-load them once you start Vim.&lt;/p&gt;
 
 &lt;p&gt;And voila:&lt;/p&gt;
 
@@ -202,19 +237,19 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/linux/unix/vim/editor/textmate/mac%20os%20x/development/2013/03/01/yo-dawg-we-heard-you-like-textmate-dot-dot-dot.html</guid>
         
         
-        <category>linux</category>
+        <category>Linux</category>
         
-        <category>unix</category>
+        <category>Unix</category>
         
-        <category>vim</category>
+        <category>ViM</category>
         
-        <category>editor</category>
+        <category>Editor</category>
         
-        <category>textmate</category>
+        <category>TextMate</category>
         
-        <category>mac os x</category>
+        <category>Mac OS X</category>
         
-        <category>development</category>
+        <category>Development</category>
         
       </item>
     
@@ -228,32 +263,32 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
 
 &lt;p&gt;For a person with even mediocre understanding of HTML and JavaScript it shouldn’t pose a problem to put together a simple extension of their own.&lt;/p&gt;
 
-&lt;p&gt;You start with preparing a &lt;code&gt;manifest.json&lt;/code&gt; file, which pretty much is what its name implies. This describes the extension and by means of the &lt;code&gt;permissions&lt;/code&gt; settings allows for example to bypass &lt;a href=&quot;http://en.wikipedia.org/wiki/Same_origin_policy&quot;&gt;Same origin policy&lt;/a&gt;, shoud you want to use AJAX, but we will focus on something very simple - namely injecting your code into the document loaded in the currently selected tab.&lt;/p&gt;
+&lt;p&gt;You start with preparing a &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file, which pretty much is what its name implies. This describes the extension and by means of the &lt;code class=&quot;highlighter-rouge&quot;&gt;permissions&lt;/code&gt; settings allows for example to bypass &lt;a href=&quot;http://en.wikipedia.org/wiki/Same_origin_policy&quot;&gt;Same origin policy&lt;/a&gt;, shoud you want to use AJAX, but we will focus on something very simple - namely injecting your code into the document loaded in the currently selected tab.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;manifest.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;A browser action running JQuery on loaded docs DOM&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;version&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;background&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;quot;scripts&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;background.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;permissions&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;http://*/*&amp;quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;browser_action&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Run me!&amp;quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;quot;manifest_version&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;A browser action running JQuery on loaded docs DOM&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;background&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;background.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;permissions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://*/*&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;browser_action&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Run me!&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;manifest_version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now we have to fashion up a &lt;code&gt;background.js&lt;/code&gt; file with a listener which will be triggered by the event of pressing the extension button. The triggered action will be loading the &lt;code&gt;jquery.min.js&lt;/code&gt;, and as its callback executing the short JQuery code, which adds the word test at the begining of documents body contents.&lt;/p&gt;
+&lt;p&gt;Now we have to fashion up a &lt;code class=&quot;highlighter-rouge&quot;&gt;background.js&lt;/code&gt; file with a listener which will be triggered by the event of pressing the extension button. The triggered action will be loading the &lt;code class=&quot;highlighter-rouge&quot;&gt;jquery.min.js&lt;/code&gt;, and as its callback executing the short JQuery code, which adds the word test at the begining of documents body contents.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;background.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;background.js&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;browserAction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onClicked&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;executeScript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;executeScript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$(&amp;#39;body&amp;#39;).prepend(&amp;#39;Test&amp;#39;);&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;browserAction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onClicked&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;executeScript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;jquery.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;executeScript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$(&#39;body&#39;).prepend(&#39;Test&#39;);&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;After that you just make sure all the files are saved in the same directory and:&lt;/p&gt;
 
@@ -265,7 +300,7 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
   &lt;li&gt;select your extension directory&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;…and that’s the whole shebang. Your extension should be loaded, which will be indicated by the little puzzle piece icon top right corner. After that load up a page and test it. Each time you press it, the word &lt;em&gt;“Test”&lt;/em&gt; wrapped in &lt;code&gt;h1&lt;/code&gt; tags in should be added to the beginning of the documents body.&lt;/p&gt;
+&lt;p&gt;…and that’s the whole shebang. Your extension should be loaded, which will be indicated by the little puzzle piece icon top right corner. After that load up a page and test it. Each time you press it, the word &lt;em&gt;“Test”&lt;/em&gt; wrapped in &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; tags in should be added to the beginning of the documents body.&lt;/p&gt;
 
 &lt;p&gt;That’s hardly a useful extension but you can do much more, for example:&lt;/p&gt;
 
@@ -282,13 +317,13 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/javascript/html/chrome/development/2013/02/21/writing-chrome-extensions.html</guid>
         
         
-        <category>javascript</category>
+        <category>Javascript</category>
         
-        <category>html</category>
+        <category>HTML</category>
         
-        <category>chrome</category>
+        <category>Chrome</category>
         
-        <category>development</category>
+        <category>Development</category>
         
       </item>
     
@@ -322,11 +357,11 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/android/mobile/file%20manager/2013/01/09/android-file-manager-quadrilemma.html</guid>
         
         
-        <category>android</category>
+        <category>Android</category>
         
-        <category>mobile</category>
+        <category>Mobile</category>
         
-        <category>file manager</category>
+        <category>File Manager</category>
         
       </item>
     
@@ -350,13 +385,13 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/ios/android/mobile/application/2013/01/07/reading-news-the-natural-way.html</guid>
         
         
-        <category>ios</category>
+        <category>iOS</category>
         
-        <category>android</category>
+        <category>Android</category>
         
-        <category>mobile</category>
+        <category>Mobile</category>
         
-        <category>application</category>
+        <category>Application</category>
         
       </item>
     
@@ -391,9 +426,9 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/entertainment/nintendo%20ds/2012/10/18/handheld-nintendo-praise.html</guid>
         
         
-        <category>entertainment</category>
+        <category>Entertainment</category>
         
-        <category>nintendo ds</category>
+        <category>Nintendo DS</category>
         
       </item>
     
@@ -414,34 +449,7 @@ Follow the instructions provided by the link above to install the plugin.&lt;/p&
         <guid isPermaLink="true">https://aladac.github.io/games/2012/08/09/fire_your_chaingun_and_burn_rubber.html</guid>
         
         
-        <category>games</category>
-        
-      </item>
-    
-      <item>
-        <title>Vintage multiplayer</title>
-        <description>&lt;p&gt;I remember the times when playing a multiplayer game was not very easy.&lt;/p&gt;
-
-&lt;p&gt;During the times that DOS was the dominant home OS, most multiplayer sessions invlolved a serial cable and taking a PC to the place the gaming took part at.&lt;/p&gt;
-
-&lt;p&gt;If you were lucky enough to have access to a LAN populated by other willing players, you were one happy camper.&lt;/p&gt;
-
-&lt;p&gt;If you would like to relive those multiplayer moments with some friends from the old days, &lt;a href=&quot;http://www.dosbox.com/&quot;&gt;DOSBox&lt;/a&gt; is there for you, with its &lt;a href=&quot;http://www.dosbox.com/wiki/Connectivity&quot;&gt;IPX emulation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I already tried out &lt;a href=&quot;http://en.wikipedia.org/wiki/Death_Rally&quot;&gt;Death Rally&lt;/a&gt; and it worked like a charm.&lt;/p&gt;
-
-&lt;p&gt;Now I need to test drive Doom, Duke Nukem 3D, Mechwarrior 2 :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://38.media.tumblr.com/tumblr_m40838C5iF1r9e7vc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 13 May 2012 00:00:00 +0200</pubDate>
-        <link>https://aladac.github.io/games/emulation/2012/05/13/vintage_multiplayer.html</link>
-        <guid isPermaLink="true">https://aladac.github.io/games/emulation/2012/05/13/vintage_multiplayer.html</guid>
-        
-        
-        <category>games</category>
-        
-        <category>emulation</category>
+        <category>Games</category>
         
       </item>
     

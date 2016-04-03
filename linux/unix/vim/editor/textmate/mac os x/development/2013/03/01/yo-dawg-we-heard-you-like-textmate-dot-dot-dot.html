@@ -75,18 +75,18 @@ Sounds complicated? Well it’s really not.</p>
 <h3 id="textmate-snippet-video-example">TextMate Snippet video example</h3>
 <p><img src="http://i.imgur.com/o2iZ6tV.gif" alt="Textmate Snippet" /></p>
 
-<p>The second Snippet used here, namely the <code>opt⇥</code> looks like this inside:</p>
+<p>The second Snippet used here, namely the <code class="highlighter-rouge">opt⇥</code> looks like this inside:</p>
 
 <h3 id="snippet-code-example">Snippet code example</h3>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">opts</span><span class="o">.</span><span class="n">on</span><span class="p">(</span> <span class="s2">&quot;-${1:o}&quot;</span><span class="p">,</span> <span class="s2">&quot;--${2:long-option-name}${6: }&quot;</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="o">/^</span><span class="p">\</span><span class="n">s</span><span class="o">*</span><span class="err">$</span><span class="o">|</span><span class="p">(</span><span class="o">.</span><span class="n">*</span><span class="p">\</span><span class="n">S</span><span class="o">.</span><span class="n">*</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="sc">?1</span><span class="p">:,</span> <span class="p">)</span><span class="o">/</span><span class="p">}</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="ss">:String</span><span class="p">},</span>
-         <span class="s2">&quot;${4:Option description.}&quot;</span> <span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="vg">$2</span><span class="o">|</span>
-	<span class="n">options</span><span class="o">[</span><span class="p">:</span><span class="vg">$2</span><span class="o">]</span> <span class="o">=</span> <span class="vg">$2</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">opts</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span> <span class="s2">"-${1:o}"</span><span class="p">,</span> <span class="s2">"--${2:long-option-name}${6: }"</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="o">/^</span><span class="p">\</span><span class="n">s</span><span class="o">*</span><span class="err">$</span><span class="o">|</span><span class="p">(.</span><span class="nf">*</span><span class="p">\</span><span class="no">S</span><span class="p">.</span><span class="nf">*</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="sc">?1</span><span class="p">:,</span> <span class="p">)</span><span class="o">/</span><span class="p">}</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="ss">:String</span><span class="p">},</span>
+         <span class="s2">"${4:Option description.}"</span> <span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="vg">$2</span><span class="o">|</span>
+	<span class="n">options</span><span class="p">[:</span><span class="vg">$2</span><span class="p">]</span> <span class="o">=</span> <span class="vg">$2</span>
 <span class="k">end</span>
-<span class="vg">$5</span></code></pre></div>
+<span class="vg">$5</span></code></pre></figure>
 
 <p>This basically defines what to initialy put when
-<code>opt⇥</code>  is entered, and were are the cursor jump points after
+<code class="highlighter-rouge">opt⇥</code>  is entered, and were are the cursor jump points after
 the initial template is inserted.</p>
 
 <p>TextMate is a really cool tool - but it is a commercial tool. One of it’s major competitors <a href="http://www.sublimetext.com/">Sublime Text</a> is also commercial.
@@ -108,15 +108,15 @@ Follow the instructions provided by the link above to install the plugin.</p>
 
 <h3 id="making-it-work">Making it work</h3>
 
-<p>After installing pathogen, you should have you <code>~/.vim/bundle</code> directory. All you need to do now in your terminal is:</p>
+<p>After installing pathogen, you should have you <code class="highlighter-rouge">~/.vim/bundle</code> directory. All you need to do now in your terminal is:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> ~/.vim/bundle
-<span class="nv">$ </span>git clone https://github.com/garbas/vim-snipmate
-<span class="nv">$ </span>git clone https://github.com/vim-scripts/tlib.git
-<span class="nv">$ </span>git clone https://github.com/vim-scripts/vim-addon-mw-utils.git
-<span class="nv">$ </span>git clone https://github.com/honza/snipmate-snippets.git</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd</span> ~/.vim/bundle
+<span class="gp">$ </span>git clone https://github.com/garbas/vim-snipmate
+<span class="gp">$ </span>git clone https://github.com/vim-scripts/tlib.git
+<span class="gp">$ </span>git clone https://github.com/vim-scripts/vim-addon-mw-utils.git
+<span class="gp">$ </span>git clone https://github.com/honza/snipmate-snippets.git</code></pre></figure>
 
-<p>This will download Snipmate and and its dependencies straight into your <code>~/.vim/bundle</code> directory, from which pathogen will auto-load them once you start Vim.</p>
+<p>This will download Snipmate and and its dependencies straight into your <code class="highlighter-rouge">~/.vim/bundle</code> directory, from which pathogen will auto-load them once you start Vim.</p>
 
 <p>And voila:</p>
 

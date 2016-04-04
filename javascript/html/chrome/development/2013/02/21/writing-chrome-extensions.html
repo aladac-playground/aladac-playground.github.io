@@ -70,9 +70,9 @@
 
 <p>For a person with even mediocre understanding of HTML and JavaScript it shouldn’t pose a problem to put together a simple extension of their own.</p>
 
-<p>You start with preparing a <code class="highlighter-rouge">manifest.json</code> file, which pretty much is what its name implies. This describes the extension and by means of the <code class="highlighter-rouge">permissions</code> settings allows for example to bypass <a href="http://en.wikipedia.org/wiki/Same_origin_policy">Same origin policy</a>, shoud you want to use AJAX, but we will focus on something very simple - namely injecting your code into the document loaded in the currently selected tab.</p>
+<p>You start with preparing a <code>manifest.json</code> file, which pretty much is what its name implies. This describes the extension and by means of the <code>permissions</code> settings allows for example to bypass <a href="http://en.wikipedia.org/wiki/Same_origin_policy">Same origin policy</a>, shoud you want to use AJAX, but we will focus on something very simple - namely injecting your code into the document loaded in the currently selected tab.</p>
 
-<p><code class="highlighter-rouge">manifest.json</code></p>
+<p><code>manifest.json</code></p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
   </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A browser action running JQuery on loaded docs DOM"</span><span class="p">,</span><span class="w">
@@ -87,9 +87,9 @@
   </span><span class="nt">"manifest_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
 </span><span class="p">}</span></code></pre></figure>
 
-<p>Now we have to fashion up a <code class="highlighter-rouge">background.js</code> file with a listener which will be triggered by the event of pressing the extension button. The triggered action will be loading the <code class="highlighter-rouge">jquery.min.js</code>, and as its callback executing the short JQuery code, which adds the word test at the begining of documents body contents.</p>
+<p>Now we have to fashion up a <code>background.js</code> file with a listener which will be triggered by the event of pressing the extension button. The triggered action will be loading the <code>jquery.min.js</code>, and as its callback executing the short JQuery code, which adds the word test at the begining of documents body contents.</p>
 
-<p><code class="highlighter-rouge">background.js</code></p>
+<p><code>background.js</code></p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">chrome</span><span class="p">.</span><span class="nx">browserAction</span><span class="p">.</span><span class="nx">onClicked</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">tab</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">chrome</span><span class="p">.</span><span class="nx">tabs</span><span class="p">.</span><span class="nx">executeScript</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="p">{</span><span class="na">file</span><span class="p">:</span><span class="s2">"jquery.min.js"</span><span class="p">},</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -100,21 +100,21 @@
 <p>After that you just make sure all the files are saved in the same directory and:</p>
 
 <ul>
-  <li>start Chrome</li>
-  <li>open the extensions tab (chrome://extensions)</li>
-  <li>check the developer mode</li>
-  <li>click “load unpacked extension”</li>
-  <li>select your extension directory</li>
+<li>start Chrome</li>
+<li>open the extensions tab (chrome://extensions)</li>
+<li>check the developer mode</li>
+<li>click “load unpacked extension”</li>
+<li>select your extension directory</li>
 </ul>
 
-<p>…and that’s the whole shebang. Your extension should be loaded, which will be indicated by the little puzzle piece icon top right corner. After that load up a page and test it. Each time you press it, the word <em>“Test”</em> wrapped in <code class="highlighter-rouge">h1</code> tags in should be added to the beginning of the documents body.</p>
+<p>…and that’s the whole shebang. Your extension should be loaded, which will be indicated by the little puzzle piece icon top right corner. After that load up a page and test it. Each time you press it, the word <em>“Test”</em> wrapped in <code>h1</code> tags in should be added to the beginning of the documents body.</p>
 
-<p>That’s hardly a useful extension but you can do much more, for example:</p>
+<p>That&#39;s hardly a useful extension but you can do much more, for example:</p>
 
 <ul>
-  <li>add a nifty download button to a site like YouTube</li>
-  <li>change the looks of pages you visit by hiding parts of them, or changing their looks altogether</li>
-  <li>communicate with Chromes options and features</li>
+<li>add a nifty download button to a site like YouTube</li>
+<li>change the looks of pages you visit by hiding parts of them, or changing their looks altogether</li>
+<li>communicate with Chromes options and features</li>
 </ul>
 
 <p>There are loads of ready <a href="http://developer.chrome.com/extensions/samples.html">examples</a> on the Google Chrome Extensions pages, along with more detailed guides explaining what, when and why.</p>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Yo dawg we heard you like TextMate...</title>
-  <meta name="description" content="… so here’s Snipmate for your Vim so you can TextMate while you Vim.TextMate is great. My most favourite TextMate feature are the Snippets.What is a Snippet?...">
+  <meta name="description" content="... so here&#39;s Snipmate for your Vim so you can TextMate while you Vim.TextMate is great. My most favourite TextMate feature are the Snippets.What is a Sn...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://aladac.github.io/linux/unix/vim/editor/textmate/mac%20os%20x/development/2013/03/01/yo-dawg-we-heard-you-like-textmate-dot-dot-dot.html">
@@ -62,53 +62,54 @@
   </header>
 
   <article class="post-content">
-    <p>… so here’s <a href="https://github.com/garbas/vim-snipmate">Snipmate</a> for your Vim so you can <a href="http://macromates.com/">TextMate</a> while you Vim.</p>
+    <p>... so here&#39;s <a href="https://github.com/garbas/vim-snipmate">Snipmate</a> for your Vim so you can <a href="http://macromates.com/">TextMate</a> while you Vim.</p>
 
 <p><a href="http://macromates.com/">TextMate</a> is great. My most favourite TextMate feature are the Snippets.
 What is a Snippet? A Snippet is a piece of code that defines the editors helpful behaviour in a given context.
-Sounds complicated? Well it’s really not.</p>
+Sounds complicated? Well it&#39;s really not.</p>
 
 <!-- more -->
 
-<p>Here’s how it works:</p>
+<p>Here&#39;s how it works:</p>
 
-<h3 id="textmate-snippet-video-example">TextMate Snippet video example</h3>
-<p><img src="http://i.imgur.com/o2iZ6tV.gif" alt="Textmate Snippet" /></p>
+<h3>TextMate Snippet video example</h3>
 
-<p>The second Snippet used here, namely the <code class="highlighter-rouge">opt⇥</code> looks like this inside:</p>
+<p><img src="http://i.imgur.com/o2iZ6tV.gif" alt="Textmate Snippet"></p>
 
-<h3 id="snippet-code-example">Snippet code example</h3>
+<p>The second Snippet used here, namely the <code>opt⇥</code> looks like this inside:</p>
+
+<h3>Snippet code example</h3>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">opts</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span> <span class="s2">"-${1:o}"</span><span class="p">,</span> <span class="s2">"--${2:long-option-name}${6: }"</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="o">/^</span><span class="p">\</span><span class="n">s</span><span class="o">*</span><span class="err">$</span><span class="o">|</span><span class="p">(.</span><span class="nf">*</span><span class="p">\</span><span class="no">S</span><span class="p">.</span><span class="nf">*</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="sc">?1</span><span class="p">:,</span> <span class="p">)</span><span class="o">/</span><span class="p">}</span><span class="err">$</span><span class="p">{</span><span class="mi">3</span><span class="ss">:String</span><span class="p">},</span>
          <span class="s2">"${4:Option description.}"</span> <span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="vg">$2</span><span class="o">|</span>
-	<span class="n">options</span><span class="p">[:</span><span class="vg">$2</span><span class="p">]</span> <span class="o">=</span> <span class="vg">$2</span>
+    <span class="n">options</span><span class="p">[:</span><span class="vg">$2</span><span class="p">]</span> <span class="o">=</span> <span class="vg">$2</span>
 <span class="k">end</span>
 <span class="vg">$5</span></code></pre></figure>
 
 <p>This basically defines what to initialy put when
-<code class="highlighter-rouge">opt⇥</code>  is entered, and were are the cursor jump points after
+<code>opt⇥</code>  is entered, and were are the cursor jump points after
 the initial template is inserted.</p>
 
-<p>TextMate is a really cool tool - but it is a commercial tool. One of it’s major competitors <a href="http://www.sublimetext.com/">Sublime Text</a> is also commercial.
+<p>TextMate is a really cool tool - but it is a commercial tool. One of it&#39;s major competitors <a href="http://www.sublimetext.com/">Sublime Text</a> is also commercial.
 Both of those editors are also not exaclty cheap.</p>
 
 <p>But fear not, there is one reliable piece of software that has been there almost forever for every Unix SysAdmin, SysOp, DevOp, WhateverOp.
 I mean off course <strike>Ema...</strike> <a href="http://www.vim.org/">Vim</a>!</p>
 
-<h3 id="things-you-need">Things you need</h3>
+<h3>Things you need</h3>
 
 <ul>
-  <li>Vim</li>
-  <li>pathogen Vim plugin</li>
-  <li>git</li>
+<li>Vim</li>
+<li>pathogen Vim plugin</li>
+<li>git</li>
 </ul>
 
-<p>If you don’t already use the <a href="https://github.com/tpope/vim-pathogen">pathogen plugin</a>, do it right now. By the way - <a href="https://github.com/tpope">Tim Pope</a>, the author of pathogen is the goto man for your Vim plugin needs.
+<p>If you don&#39;t already use the <a href="https://github.com/tpope/vim-pathogen">pathogen plugin</a>, do it right now. By the way - <a href="https://github.com/tpope">Tim Pope</a>, the author of pathogen is the goto man for your Vim plugin needs.
 Follow the instructions provided by the link above to install the plugin.</p>
 
-<h3 id="making-it-work">Making it work</h3>
+<h3>Making it work</h3>
 
-<p>After installing pathogen, you should have you <code class="highlighter-rouge">~/.vim/bundle</code> directory. All you need to do now in your terminal is:</p>
+<p>After installing pathogen, you should have you <code>~/.vim/bundle</code> directory. All you need to do now in your terminal is:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd</span> ~/.vim/bundle
 <span class="gp">$ </span>git clone https://github.com/garbas/vim-snipmate
@@ -116,14 +117,15 @@ Follow the instructions provided by the link above to install the plugin.</p>
 <span class="gp">$ </span>git clone https://github.com/vim-scripts/vim-addon-mw-utils.git
 <span class="gp">$ </span>git clone https://github.com/honza/snipmate-snippets.git</code></pre></figure>
 
-<p>This will download Snipmate and and its dependencies straight into your <code class="highlighter-rouge">~/.vim/bundle</code> directory, from which pathogen will auto-load them once you start Vim.</p>
+<p>This will download Snipmate and and its dependencies straight into your <code>~/.vim/bundle</code> directory, from which pathogen will auto-load them once you start Vim.</p>
 
 <p>And voila:</p>
 
-<h3 id="snipmate-snippet-video-example">Snipmate Snippet video example</h3>
-<p><img src="http://i.imgur.com/uliBU7K.gif" alt="Snipmate Example" /></p>
+<h3>Snipmate Snippet video example</h3>
 
-<p>After having successfully added the Snippets functionality it would be nice to make Vim a little prettier, by making use of all the 256 colors a modern terminal emulator usually provides and installing a clone of Ryan Bates <em>“railscasts”</em> color schemes. But that is a subject for another post, another time.</p>
+<p><img src="http://i.imgur.com/uliBU7K.gif" alt="Snipmate Example"></p>
+
+<p>After having successfully added the Snippets functionality it would be nice to make Vim a little prettier, by making use of all the 256 colors a modern terminal emulator usually provides and installing a clone of Ryan Bates <em>&quot;railscasts&quot;</em> color schemes. But that is a subject for another post, another time.</p>
 
   </article>
 

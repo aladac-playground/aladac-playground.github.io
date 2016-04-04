@@ -65,19 +65,19 @@
     <p>Sometimes it is easier to analyze your data models when they are visualized. Whether you analyze your models, collaborate with someone or just plainly need to explain to the customer
 how you understood the business concept - diagrams help a lot.</p>
 
-<p>When things like <code class="highlighter-rouge">rdoc</code>, <code class="highlighter-rouge">sdoc</code> or <code class="highlighter-rouge">yard</code> encourage and make documenting your work easier I was wondering if there is a tools that deals with ERM in a similar fashion.</p>
+<p>When things like <code>rdoc</code>, <code>sdoc</code> or <code>yard</code> encourage and make documenting your work easier I was wondering if there is a tools that deals with ERM in a similar fashion.</p>
 
-<p>Well, as I have found out on numerous occasions when dealing with Ruby related issues the answer to most <em>“Wonder if there is a … ?”</em> questions is <em>“Yup!”</em>.</p>
+<p>Well, as I have found out on numerous occasions when dealing with Ruby related issues the answer to most <em>&quot;Wonder if there is a ... ?&quot;</em> questions is <em>&quot;Yup!&quot;</em>.</p>
 
 <!-- more -->
 
-<p><img src="http://i.imgur.com/SF6UHkN.png" alt="Rails ERD Example" /></p>
+<p><img src="http://i.imgur.com/SF6UHkN.png" alt="Rails ERD Example"></p>
 
-<p><a href="http://rails-erd.rubyforge.org/">Rails ERD</a> allows you to generate ERD’s from your existing Models.</p>
+<p><a href="http://rails-erd.rubyforge.org/">Rails ERD</a> allows you to generate ERD&#39;s from your existing Models.</p>
 
-<p>The tool uses <code class="highlighter-rouge">graphviz</code> and is really straighforward to setup.</p>
+<p>The tool uses <code>graphviz</code> and is really straighforward to setup.</p>
 
-<p>After making sure you have <code class="highlighter-rouge">graphviz</code> installed you just modify your projects <code class="highlighter-rouge">Gemfile</code></p>
+<p>After making sure you have <code>graphviz</code> installed you just modify your projects <code>Gemfile</code></p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
   <span class="n">gem</span> <span class="s2">"rails-erd"</span>
@@ -87,12 +87,12 @@ how you understood the business concept - diagrams help a lot.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bundle install</code></pre></figure>
 
-<p>… and if you already have Models you are set to go.
+<p>... and if you already have Models you are set to go.
 After issuing:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>rake erd</code></pre></figure>
 
-<p>… and your first <code class="highlighter-rouge">erd.pdf</code> should be generated in your projects root directory.</p>
+<p>... and your first <code>erd.pdf</code> should be generated in your projects root directory.</p>
 
 <p>There are several options to choose from. The gem is well documented both <a href="http://rails-erd.rubyforge.org/customise.html">command line options wise</a> and <a href="http://rails-erd.rubyforge.org/doc/">API wise</a>.</p>
 
